@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Legacy</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap_paper.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="lib/wymeditor/skins/paper/skin.css">
@@ -54,6 +55,7 @@
   <script src="lib/bootstrap.js"></script>
   <script src="lib/wymeditor/jquery.wymeditor.js"></script>
   <script src="lib/wymeditor/plugins/alignment/jquery.wymeditor.alignment.js"></script>
+  <script src="lib/wymeditor/plugins/input_span/jquery.wymeditor.insert_span.js"></script>
   <script>
     
     var wymEditor;
@@ -64,6 +66,7 @@
         postInit: function(wym) {
           wym.alignment();
           wymEditor = wym;
+          wym.insert_span();
         }
       });
       

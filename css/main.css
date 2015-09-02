@@ -98,3 +98,10 @@ body {
 .navbar-home ::placeholder {
   color: #f1f8e9;
 }
+.navbar-home .glyphicon {
+  font-size: 20px;
+}
+.navbar-home .wym_skin_default.wym_buttons li {
+a
+  text-indent: 0;
+}

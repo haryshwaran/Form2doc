@@ -22,4 +22,11 @@
 <link rel="stylesheet" type="text/css" media="screen" href="wymiframe.css" />
 </head>
 <body></body>
+  <script>
+      var wym_editor = document.body;
+
+      wym_editor.onkeyup = wym_editor.onkeypress = wym_editor.onkeydown = function(){
+          parent.document.getElementById('preview-wym').innerHTML = wym_editor.innerHTML;
+      }
+  </script>
 </html>

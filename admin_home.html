@@ -44,7 +44,7 @@
         </form>
       </div>
       <div class="preview-pane">
-              <div class="doc-pages-wrapper">
+              <div class="doc-pages-wrapper" id="preview-wym">
                 <p align=center style='text-align:center'><b>LAST WILL AND TESTAMENT OF</b></p>
 
                 <p align=center style='text-align:center'>{_______________________________________}<br>
@@ -323,16 +323,11 @@
           wym.alignment();
         }
       });
+      
+      $('.wym_area_left').remove();
+      $('.wym_area_right').remove();
+      
     });
-    
-    
-    var wpcomment = document.getElementById('WPComment');
-
-    wpcomment.onkeyup = wpcomment.onkeypress = wpcomment.onkeydown = function(){
-        document.getElementById('prevCom').innerHTML = this.value;
-    }
-    
-    
   </script>
   
 </html>

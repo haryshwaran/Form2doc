@@ -55,11 +55,15 @@
   <script src="lib/wymeditor/jquery.wymeditor.js"></script>
   <script src="lib/wymeditor/plugins/alignment/jquery.wymeditor.alignment.js"></script>
   <script>
+    
+    var wymEditor;
+    
   	$(document).ready(function() {
       $('#textarea-wym').wymeditor({
         iframeBasePath:'/lib/wymeditor/iframe/modern/',
         postInit: function(wym) {
           wym.alignment();
+          wymEditor = wym;
         }
       });
       

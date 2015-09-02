@@ -1,0 +1,23 @@
+{
+  "name": "form2doc",
+  "version": "0.0.1",
+  "description": "Convert form input into documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haryshwaran/Form2doc.git"
+  },
+  "author": "Haryshwaran",
+  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haryshwaran/Form2doc/issues"
+  },
+  "homepage": "https://github.com/haryshwaran/Form2doc#readme",
+  "dependencies": {
+    "surge": "^0.14.3"
+  }
+}

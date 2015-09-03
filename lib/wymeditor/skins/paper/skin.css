@@ -174,5 +174,9 @@ p.text-justify {
 }
 
 .glyphicon{
-  font-size:1.6em; 
+  font-size: 1.6em; 
+}
+
+.wym_area_top{
+  padding-left: 8px;
 }

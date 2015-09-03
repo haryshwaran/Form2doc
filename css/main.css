@@ -7,26 +7,23 @@ body {
   height: 100%;
   padding: 0;
 }
-.form-section,
-.editor-pane {
+.form-section {
   width: 30%;
   height: 100%;
   padding: 15px;
   float: left;
 }
-.doc-section,
-.preview-pane {
+.doc-section {
   width: 70%;
   height: 100%;
   float: left;
   padding: 0px 15px;
-  background-color: #fff;
 }
-.editor-pane {
-  width: 50%;
-}
+.editor-pane,
 .preview-pane {
   width: 50%;
+  height: 100%;
+  float: left;
 }
 .doc-pages-wrapper {
   overflow: auto;
@@ -95,4 +92,39 @@ body {
 }
 .navbar-home ::placeholder {
   color: #f1f8e9;
+}
+.navbar-admin.navbar,
+.navbar-admin.navbar-inverse {
+  border-radius: 0;
+  border-color: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.toolbar-pane {
+  min-height: 30px;
+  padding-left: 15px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #2196f3;
+}
+.toolbar-pane .glyphicon {
+  font-size: 1.2em;
+}
+.toolbar-pane .btn {
+  height: 100%;
+  padding: 3px 16px;
+  box-shadow: none;
+  margin-left: 10px;
+}
+@media print {
+  nav,
+  .editor-pane,
+  .toolbar-pane {
+    display: none;
+  }
+  .preview-pane {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

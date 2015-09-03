@@ -73,6 +73,10 @@
       $('.wym_area_left').remove();
       $('.wym_area_right').remove();
       
+      $.get("variable_form.html", function( data ) {
+        $('body').append( data );
+      });
+      
     });
   </script>
   

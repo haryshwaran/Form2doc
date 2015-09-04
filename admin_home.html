@@ -316,14 +316,12 @@
         </div>
     </div>
   </body>
-  <script src="lib/jspdf.js"></script>
   <script src="lib/jquery-2.1.4.min.js"></script>
   <script src="lib/bootstrap.js"></script>
   <script src="lib/wymeditor/jquery.wymeditor.js"></script>
   <script src="lib/wymeditor/plugins/alignment/jquery.wymeditor.alignment.js"></script>
-  <script src="lib/wymeditor/plugins/input_span/jquery.wymeditor.insert_span.js"></script>
+  <script src="lib/wymeditor/plugins/input_span/jquery.wymeditor.form_controls.js"></script>
   <script>
-    
     var wymEditor;
     var printPreviewContents = function(){
         javascript:window.print();
@@ -335,17 +333,12 @@
         postInit: function(wym) {
           wym.alignment();
           wymEditor = wym;
-          wym.insert_span();
+          wym.form_controls();
         }
       });
       
       $('.wym_area_left').remove();
       $('.wym_area_right').remove();
-      
-      $.get("variable_form.html", function( data ) {
-        $('body').append( data );
-      });
     });
   </script>
-  
 </html>

@@ -1,4 +1,7 @@
 # Form2doc
+
+Update: This was abandoned.
+
 Static site proof of concept to test form to html document mappping
 
 clone repository
